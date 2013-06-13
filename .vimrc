@@ -64,6 +64,27 @@ set expandtab
 set number
 set encoding=utf-8
 
+" Ignore case when searching
+set ignorecase
+" When searching try to be smart about cases
+set smartcase
+" Highlight search results
+set hlsearch
+" Show matching brackets when text indicator is over them
+set showmatch 
+" How many tenths of a second to blink when matching brackets
+set mat=2
+" Disable highlight when <leader><cr> is pressed
+map <silent> <leader><cr> :noh<cr>
+
+" Useful mappings for managing tabs
+map <leader>tn :tabnew<cr>
+map <leader>to :tabonly<cr>
+map <leader>tc :tabclose<cr>
+map <leader>tm :tabmove 
+
+" Fast saving
+nmap <leader>w :w!<cr>
 
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
@@ -73,5 +94,5 @@ let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:snips_author="Tom Kitchin <tkitchin@inviqa.com>"
 
-map <leader>t :NERDTreeToggle<CR>
+map <leader>T :NERDTreeToggle<CR>
 autocmd vimenter * if !argc() | NERDTree | endif
