@@ -7,7 +7,6 @@ call vundle#rc()
 " let Vundle manage Vundle
 " required!
 Bundle 'gmarik/vundle'
-Bundle 'michalbachowski/vim-wombat256mod'
 Bundle 'Lokaltog/powerline'
 Bundle 'SirVer/ultisnips'
 Bundle 'tobyS/pdv'
@@ -32,8 +31,10 @@ Bundle 'othree/html5-syntax.vim'
 Bundle 'vim-scripts/HTML-AutoCloseTag'
 Bundle 'vim-scripts/indenthtml.vim'
 Bundle 'mattn/zencoding-vim'
+Bundle 'altercation/vim-colors-solarized'
 
-colorscheme wombat256mod
+set background=dark
+colorscheme solarized
 python from powerline.ext.vim import source_plugin; source_plugin()
 set laststatus=2
 set ruler
