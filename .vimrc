@@ -35,7 +35,10 @@ Bundle 'altercation/vim-colors-solarized'
 
 set background=dark
 colorscheme solarized
-python from powerline.ext.vim import source_plugin; source_plugin()
+
+" Powerline
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+
 set laststatus=2
 set ruler
 syntax on
@@ -68,7 +71,7 @@ let g:html_indent_style1 = "inc"
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
-let g:snips_author="Ben Longden"
+let g:snips_author="Tom Kitchin <tkitchin@inviqa.com>"
 
 map <leader>t :NERDTreeToggle<CR>
 autocmd vimenter * if !argc() | NERDTree | endif
