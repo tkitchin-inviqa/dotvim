@@ -64,6 +64,13 @@ set expandtab
 set number
 set encoding=utf-8
 
+" Treat long lines as break lines (useful when moving around in them)
+map j gj
+map k gk
+
+" Remap VIM 0 to first non-blank character
+map 0 ^
+
 " Ignore case when searching
 set ignorecase
 " When searching try to be smart about cases
