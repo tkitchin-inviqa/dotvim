@@ -93,6 +93,11 @@ map <leader>tm :tabmove
 " Fast saving
 nmap <leader>w :w!<cr>
 
+" Command for using sudo to save writelocked files.
+command Wsudo w !sudo tee %
+" Fast sudo saving.
+nmap <leader>W :Wsudo<cr>
+
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
 
